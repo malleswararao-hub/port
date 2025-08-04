@@ -120,9 +120,14 @@ export default function Index() {
                   <Mail className="w-4 h-4 mr-2" />
                   Contact Me
                 </Button>
-                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary">
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  View Resume
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="bg-transparent border-white text-white hover:bg-white hover:text-primary"
+                  onClick={handleResumeDownload}
+                >
+                  <Download className="w-4 h-4 mr-2" />
+                  Download Resume
                 </Button>
               </div>
             </div>
