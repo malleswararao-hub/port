@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Code, Database, Server, Globe } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Code, Database, Server, Globe, Download } from "lucide-react";
 
 export default function Index() {
   const skills = {
