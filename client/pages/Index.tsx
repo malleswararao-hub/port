@@ -4,6 +4,15 @@ import { Badge } from "@/components/ui/badge";
 import { Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Code, Database, Server, Globe, Download } from "lucide-react";
 
 export default function Index() {
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = 'https://cdn.builder.io/api/v1/assets/6d207ab9eab84a4a8f14186015210816/malleswararao-duggineni-java.pdf-69aa78';
+    link.download = 'Malleswararao_Duggineni_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const skills = {
     "Programming Languages": ["Java 8", "Python", "C/C++"],
     "Frameworks & Technologies": ["Spring Boot", "Spring MVC", "JPA", "REST APIs"],
